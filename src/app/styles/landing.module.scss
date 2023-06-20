@@ -1,0 +1,41 @@
+.textContent {
+  p {
+    font-size: 14px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sectionAvisos {
+  padding-top: 1px;
+  background-color: #e9e9e9;
+  .avisos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .seeMore {
+    margin-top: -50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

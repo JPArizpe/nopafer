@@ -1,0 +1,42 @@
+.section {
+  padding: 20px 50px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -140px;
+
+  .sectionMargin {
+    margin-top: 130px;
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+  }
+
+  .readmore {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+  }
+
+  .contactLeft {
+    width: 50%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 5px;
+
+      &:last-child {
+        text-decoration: underline;
+      }
+    }
+  }
+}

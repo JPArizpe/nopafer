@@ -1,0 +1,44 @@
+.nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
