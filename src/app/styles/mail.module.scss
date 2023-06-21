@@ -15,6 +15,14 @@
     margin-top: 130px;
   }
 
+  &.full {
+    height: 100vh;
+
+    .sectionMargin {
+      margin-top: 250px;
+    }
+  }
+
   .description {
     margin-top: 0;
   }
@@ -47,16 +55,17 @@
   .contact {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     p {
       margin-top: 0;
-      margin-bottom: 5px;
-
-      &:last-child {
-        text-decoration: underline;
-      }
+      margin-bottom: 1px;
     }
+  }
+
+  .email {
+    text-decoration: underline;
+    margin-top: -10px;
   }
 }
 

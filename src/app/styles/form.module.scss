@@ -3,6 +3,7 @@
   flex-direction: column;
   
   input, textarea {
+    font-family: 'arial', sans-serif;
     margin-bottom: 20px;
     background-color: transparent;
     border: 1px solid white;
@@ -10,6 +11,7 @@
     color: white;
 
     &::placeholder {
+      font-family: 'arial', sans-serif;
       color: white;
     }
   }

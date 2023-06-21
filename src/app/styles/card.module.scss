@@ -39,8 +39,12 @@
 
 @media only screen and (min-width: 768px) {
   .cardContainer {
-    width: 48%;
+    width: 100%;
     margin-top: 40px;
+
+    .cardImage {
+      height: 300px;
+    }
 
     .cardBody {
       .description {
@@ -53,5 +57,9 @@
 @media only screen and (min-width: 1200px) {
   .cardContainer {
     width: 32%;
+
+    .cardImage {
+      height: 200px;
+    }
   }
 }

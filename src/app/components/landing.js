@@ -32,6 +32,7 @@ export default function Landing() {
           backgroundImage={sectionBackground.src}
           title="Contacto"
           color="white"
+          seemore={true}
         />
       </div>
 
