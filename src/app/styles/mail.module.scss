@@ -6,8 +6,17 @@
   background-position: center center;
   margin-top: -140px;
 
+  .seeMore {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .sectionMargin {
     margin-top: 130px;
+  }
+
+  .description {
+    margin-top: 0;
   }
 
   p {
@@ -21,9 +30,19 @@
     margin-bottom: 60px;
   }
 
-  .contactLeft {
-    width: 50%;
+  .form {
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .contactLeft {
+    margin-bottom: 50px;
+  }
+
+  .contactRight {
+    display: flex;
+    flex-direction: column;
+  } 
 
   .contact {
     display: flex;
@@ -38,5 +57,24 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contactLeft {
+    width: 100%;
+  }
+  .contactRight {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contactLeft {
+    width: 50%;
+  }
+  .contactRight {
+    width: 50%;
   }
 }

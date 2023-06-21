@@ -2,6 +2,7 @@
 const nextConfig = {
   sassOptions: {
     includePaths: [require('path').join(__dirname, 'styles')],
+    prependData: `@import "globalvariables.scss";`
   }
 }
 

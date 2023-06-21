@@ -1,0 +1,25 @@
+.textContent {
+  p {
+    font-size: 14px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cards {
+    margin-top: 100px;
+  }
+}

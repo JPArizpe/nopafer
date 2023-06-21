@@ -1,0 +1,27 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  
+  input, textarea {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  .enviar {
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 200px;
+  }
+}

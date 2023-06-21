@@ -1,0 +1,11 @@
+.sectionAvisos {
+  padding-top: 1px;
+  background-color: $grey-3;
+  .avisos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}

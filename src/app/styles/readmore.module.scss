@@ -2,7 +2,7 @@
   cursor: pointer;
   border-radius: 20px;
   width: 150px;
-  margin-top: 50px;
+  // margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   border: 1px solid white;
 
   &.filled {
-    background-color: #569644;
+    background-color: $green;
     border: none;
   }
 

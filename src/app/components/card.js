@@ -8,12 +8,17 @@ export default function Card(props) {
   return (
     <>
       <div className={style.cardContainer}>
-        <div className={style.cardImage} style={{backgroundImage: `url(${props.image})`}}>
+        <div className={style.cardImage}>
+          <div className={style.iconContainer}>
+            <Image
+              className={style.icon}
+              src={props.icon}
+              alt={props.alt}
+            />
+          </div>
           <Image
-            className={style.icon}
-            src={props.icon}
-            width={50}
-            height={50}
+            className={style.bgImage}
+            src={props.image}
             alt={props.alt}
           />
         </div>

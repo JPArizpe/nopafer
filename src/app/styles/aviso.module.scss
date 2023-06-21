@@ -1,10 +1,11 @@
 .cardContainer {
   width: 48%;
-  background-color: #f8f8f9;
-  border-bottom: 5px solid #f1f1f4;
+  margin-top: 20px;
+  background-color: $grey-1;
+  border-bottom: 5px solid $grey-2;
 
   &:hover {
-    border-bottom: 5px solid #569644;
+    border-bottom: 5px solid $green;
   }
 
   .cardImage {
@@ -29,7 +30,27 @@
     }
     .description {
       font-size: 12px;
-      height: 50px
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cardContainer {
+    .cardBody {
+      .description {
+        height: 140px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cardContainer {
+    .cardBody {
+      .description {
+        height: 50px;
+      }
     }
   }
 }
