@@ -6,7 +6,6 @@ import Image from 'next/image'
 function Icon(props) {
   const [over, setOver] = useState(false);
 
-
   return (
     <>
       <div className={style.iconLayout}
@@ -26,4 +25,4 @@ function Icon(props) {
   );
 }
 
-export { Icon }
+export { Icon };
