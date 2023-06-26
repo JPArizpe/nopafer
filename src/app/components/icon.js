@@ -3,7 +3,7 @@ import style from '../styles/icon.module.scss';
 import { useState } from 'react';
 import Image from 'next/image'
 
-export default function Icon(props) {
+function Icon(props) {
   const [over, setOver] = useState(false);
 
   return (
@@ -24,3 +24,5 @@ export default function Icon(props) {
     </>
   );
 }
+
+export default Icon;
