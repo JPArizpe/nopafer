@@ -1,7 +1,7 @@
 'use client'
 import style from '../styles/icon.module.scss';
 import { useState } from 'react';
-import Image from 'next/image'
+// import Image from 'next/image'
 
 function Icon(props) {
   const [over, setOver] = useState(false);
@@ -12,13 +12,13 @@ function Icon(props) {
         onMouseOver={() => setOver(true)}
         onMouseOut={() => setOver(false)}
       >
-        <Image
+        {/* <Image
           className={style.icon}
           src={over ? props.hoverIcon : props.icon}
           width={75}
           height={75}
           alt={props.alt}
-        />
+        /> */}
         <a href={props.url}>{props.text}</a>
       </div>
     </>
