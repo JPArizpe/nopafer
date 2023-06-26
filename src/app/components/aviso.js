@@ -14,7 +14,7 @@ export default function Aviso(props) {
         />
         <div className={style.cardBody}>
           <p className={style.description}>{props.description}</p>
-          <Readmore filled/>
+          <Readmore filled url={props.url}/>
         </div>
       </div>
     </>

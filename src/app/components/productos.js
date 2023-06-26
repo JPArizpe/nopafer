@@ -15,6 +15,7 @@ export default function Productos() {
         icon={icon}
         text={card.title}
         alt={card.title}
+        url={card.url}
       />
     )
   })

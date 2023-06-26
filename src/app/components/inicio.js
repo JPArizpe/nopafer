@@ -18,6 +18,7 @@ export default function Inicio() {
         image={bgImage}
         icon={icon}
         alt={card.title}
+        url={card.url}
       />
     )
   })

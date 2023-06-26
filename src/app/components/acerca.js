@@ -16,7 +16,7 @@ export default function Acerca() {
           <Title title={assets.acerca.title} color="white" className={style.sectionTitle} />
           {pasedContent}
           <div className={style.readmore}>
-            <Readmore />
+            <Readmore url="/acerca" />
           </div>
         </div>
       </div>

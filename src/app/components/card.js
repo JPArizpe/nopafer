@@ -25,7 +25,7 @@ export default function Card(props) {
         <div className={style.cardBody}>
           <h1>{props.title}</h1>
           <p className={style.description}>{props.description}</p>
-          <Readmore filled/>
+          <Readmore filled url={props.url}/>
         </div>
       </div>
     </>

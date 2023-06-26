@@ -14,6 +14,7 @@ export default function Avisos() {
         description={card.text}
         image={image}
         alt={card.text}
+        url={card.url}
       />
     )
   });

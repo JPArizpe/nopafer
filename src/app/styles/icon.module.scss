@@ -9,7 +9,9 @@
     cursor: pointer;
   }
 
-  p {
+  a {
+    margin-top: 10px;
+    text-decoration: none;
     text-align: center;
     color: $green;
     font-size: 14px;

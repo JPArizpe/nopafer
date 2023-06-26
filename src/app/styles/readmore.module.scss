@@ -14,11 +14,12 @@
     border: none;
   }
 
-  p {
-    color: white;
-    font-size: 11px;
+  a {
+    color: white !important;
+    font-size: 12px;
     padding: 10px 15px;
     margin: 0;
+    text-decoration: none;
   }
 
   .arrow {
