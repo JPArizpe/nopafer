@@ -3,7 +3,7 @@ import style from '../styles/icon.module.scss';
 import { useState } from 'react';
 import Image from 'next/image'
 
-export default function Icon({ hoverIcon, icon, text, alt='icon', url=""}) {
+function Icon({ hoverIcon, icon, text, alt='icon', url=""}) {
   const [over, setOver] = useState(false);
 
 
@@ -25,3 +25,5 @@ export default function Icon({ hoverIcon, icon, text, alt='icon', url=""}) {
     </>
   );
 }
+
+export { Icon }
