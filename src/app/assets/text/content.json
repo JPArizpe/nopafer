@@ -82,22 +82,26 @@
       {
         "title": "MANUALES Y FOLLETOS",
         "icon": "folletosIcon.svg",
-        "url": "/productos/#manuales"
+        "url": "/productos/#manuales",
+        "hover": "hover_folletosIcon.svg"
       },
       {
         "title": "ELEMENTOS MULTIMEDIA",
         "icon": "multimediaIcon.svg",
-        "url": "/productos/#multimedia"
+        "url": "/productos/#multimedia",
+        "hover": "hover_multimediaIcon.svg"
       },
       {
         "title": "INFORMES TÉCNICOS",
         "icon": "tecnicosIcon.svg",
-        "url": "/productos/#informes"
+        "url": "/productos/#informes",
+        "hover": "hover_tecnicosIcon.svg"
       },
       {
         "title": "ARTÍCULOS Y TESIS",
         "icon": "tesisIcon.svg",
-        "url": "/productos/#tesis"
+        "url": "/productos/#tesis",
+        "hover": "hover_tesisIcon.svg"
       }
     ]
   },

@@ -9,10 +9,12 @@ export default function Productos() {
   const content = assets.productos.content.map((item, index) => <p key={index}>{item}</p>);
   const icons = assets.productos.cards.map((card, index) => {
     const icon = require(`../assets/images/${card.icon}`);
+    const hoverIcon = require(`../assets/images/${card.hover}`);
     return (
       <Icon
         key={index}
         icon={icon}
+        hoverIcon={hoverIcon}
         text={card.title}
         alt={card.title}
         url={card.url}
