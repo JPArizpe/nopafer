@@ -11,9 +11,9 @@ export default function Productos() {
   });
 
   const content = assets.productos.content.map((item, index) => <p key={index}>{item}</p>);
-  let icons = [];
+  let icons = <h1>Rendering...</h1>;
 
-  if (IconComponent) {
+  if (typeof window !== 'undefined') {
     icons = assets.productos.cards.map((card, index) => {
       const icon = require(`../assets/images/${card.icon}`);
       const hoverIcon = require(`../assets/images/${card.hover}`);
@@ -35,7 +35,7 @@ export default function Productos() {
       <Title title={assets.productos.title} />
       {content}
       <div className={style.productos}>
-        {IconComponent && icons}
+        {icons}
       </div>
     </div>
   )
