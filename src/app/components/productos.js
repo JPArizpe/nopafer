@@ -1,3 +1,4 @@
+'use client'
 import Title from './title';
 import Icon from './icon';
 
