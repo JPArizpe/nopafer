@@ -1,7 +1,7 @@
 'use client'
 import Inicio from './inicio';
 import Acerca from './acerca';
-import Productos from './productos';
+import { Productos } from './productos';
 import Avisos from './avisos';
 import Footer from './footer';
 

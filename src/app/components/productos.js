@@ -1,6 +1,6 @@
 'use client'
 import Title from './title';
-import Icon from './icon';
+import { Icon } from './icon';
 
 import assets from '../assets/text/content.json';
 import style from '../styles/productos.module.scss';
