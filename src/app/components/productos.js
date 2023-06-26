@@ -1,11 +1,10 @@
-'use client'
 import Title from './title';
 import { Icon } from './icon';
 
 import assets from '../assets/text/content.json';
 import style from '../styles/productos.module.scss';
 
-function Productos() {
+export default function Productos() {
 
   const content = assets.productos.content.map((item, index) => <p key={index}>{item}</p>);
   const icons = assets.productos.cards.map((card, index) => {
@@ -33,5 +32,3 @@ function Productos() {
     </div>
   )
 }
-
-export { Productos };

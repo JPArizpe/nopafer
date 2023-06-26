@@ -1,4 +1,3 @@
-'use client'
 import Inicio from './inicio';
 import Acerca from './acerca';
 import { Productos } from './productos';
