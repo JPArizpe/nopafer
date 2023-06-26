@@ -1,14 +1,18 @@
 import Inicio from './inicio';
 import Acerca from './acerca';
-import Productos from './productos';
 import Avisos from './avisos';
 import Footer from './footer';
 
 import Mail from './mail';
 import sectionBackground from '../images/sectionBackground.png';
 
+import dynamic from 'next/dynamic';
+
 
 export default function Landing() {
+
+  const Productos = dynamic(() => import('./productos'), { ssr: false });
+
   return (
     <>
       <div className="container maxWidth">
@@ -20,7 +24,7 @@ export default function Landing() {
       </div>
 
       <div className="container maxWidth">
-        <Productos />
+        {Productos && <Productos />}
       </div>
 
       <div className="container">

@@ -1,41 +1,90 @@
-import Title from './title';
-import dynamic from 'next/dynamic';
+"use client";
 
+import Title from './title';
 import assets from '../assets/text/content.json';
 import style from '../styles/productos.module.scss';
+import styleIcon from '../styles/icon.module.scss';
+import Image from 'next/image'
+import { useState } from 'react';
 
 export default function Productos() {
 
-  const IconComponent = dynamic(() => import('./icon'), {
-    ssr: false
-  });
+  const [over1, setOver1] = useState(false);
+  const [over2, setOver2] = useState(false);
+  const [over3, setOver3] = useState(false);
+  const [over4, setOver4] = useState(false);
 
-  const content = assets.productos.content.map((item, index) => <p key={index}>{item}</p>);
-  let icons = <h1>Rendering...</h1>;
+  const icon1 = require(`../assets/images/folletosIcon.svg`);
+  const hoverIcon1 = require(`../assets/images/hover_folletosIcon.svg`);
 
-  if (typeof window !== 'undefined') {
-    icons = assets.productos.cards.map((card, index) => {
-      const icon = require(`../assets/images/${card.icon}`);
-      const hoverIcon = require(`../assets/images/${card.hover}`);
-      return (
-        <IconComponent
-          key={index}
-          icon={icon}
-          hoverIcon={hoverIcon}
-          text={card.title}
-          alt={card.title}
-          url={card.url}
-        />
-      )
-    })
-  }
+  const icon2 = require(`../assets/images/multimediaIcon.svg`);
+  const hoverIcon2 = require(`../assets/images/hover_multimediaIcon.svg`);
+
+  const icon3 = require(`../assets/images/tecnicosIcon.svg`);
+  const hoverIcon3 = require(`../assets/images/hover_tecnicosIcon.svg`);
+
+  const icon4 = require(`../assets/images/tesisIcon.svg`);
+  const hoverIcon4 = require(`../assets/images/hover_tesisIcon.svg`);
 
   return (
     <div className={style.textContent}>
       <Title title={assets.productos.title} />
-      {content}
       <div className={style.productos}>
-        {icons}
+        <div className={styleIcon.iconLayout}
+          onMouseOver={() => setOver1(true)}
+          onMouseOut={() => setOver1(false)}
+        >
+          <Image
+            className={styleIcon.icon}
+            src={over1 ? hoverIcon1 : icon1 }
+            width={75}
+            height={75}
+            alt={assets.productos.cards[0].title}
+          />
+          <a href={assets.productos.cards[0].url}>{assets.productos.cards[0].title}</a>
+        </div>
+
+        <div className={styleIcon.iconLayout}
+          onMouseOver={() => setOver2(true)}
+          onMouseOut={() => setOver2(false)}
+        >
+          <Image
+            className={styleIcon.icon}
+            src={over2 ? hoverIcon2 : icon2 }
+            width={75}
+            height={75}
+            alt={assets.productos.cards[1].title}
+          />
+          <a href={assets.productos.cards[1].url}>{assets.productos.cards[1].title}</a>
+        </div>
+
+        <div className={styleIcon.iconLayout}
+          onMouseOver={() => setOver3(true)}
+          onMouseOut={() => setOver3(false)}
+        >
+          <Image
+            className={styleIcon.icon}
+            src={over3 ? hoverIcon3 : icon3 }
+            width={75}
+            height={75}
+            alt={assets.productos.cards[2].title}
+          />
+          <a href={assets.productos.cards[2].url}>{assets.productos.cards[2].title}</a>
+        </div>
+
+        <div className={styleIcon.iconLayout}
+          onMouseOver={() => setOver4(true)}
+          onMouseOut={() => setOver4(false)}
+        >
+          <Image
+            className={styleIcon.icon}
+            src={over4 ? hoverIcon4 : icon4 }
+            width={75}
+            height={75}
+            alt={assets.productos.cards[3].title}
+          />
+          <a href={assets.productos.cards[3].url}>{assets.productos.cards[3].title}</a>
+        </div>
       </div>
     </div>
   )
