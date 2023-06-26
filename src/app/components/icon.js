@@ -25,4 +25,6 @@ function Icon(props) {
   );
 }
 
-export default Icon;
+const ClientIcon = typeof window !== 'undefined' ? Icon : null;
+
+export default ClientIcon;
