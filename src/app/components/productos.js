@@ -6,7 +6,9 @@ import style from '../styles/productos.module.scss';
 
 export default function Productos() {
 
-  const IconComponent = dynamic(() => import('./icon'));
+  const IconComponent = dynamic(() => import('./icon'), {
+    ssr: false
+  });
 
   const content = assets.productos.content.map((item, index) => <p key={index}>{item}</p>);
   const icons = assets.productos.cards.map((card, index) => {
