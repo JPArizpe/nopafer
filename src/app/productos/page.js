@@ -10,7 +10,7 @@ export default function Productos() {
   return (
     <>
       <Header />
-      <Hero avisos={true} hideLogo={true} />
+      <Hero hideLogo={true} productos={true} />
 
       <div className='container maxWidth'>
         <div className={style.inicio}>

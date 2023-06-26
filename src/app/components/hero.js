@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.png';
 
 import Image from 'next/image'
 
-export default function Hero({avisos, hideLogo}) {
+export default function Hero({avisos, hideLogo, productos, acerca}) {
 
   const logoMarkup = (
     <div className={style.logoContainer}>
@@ -17,7 +17,7 @@ export default function Hero({avisos, hideLogo}) {
 
   return (
     <div>
-      <div className={`${avisos ? style.avisos : style.home} ${style.hero}`}>
+      <div className={`${avisos ? style.avisos : style.home} ${style.hero} ${productos ? style.productos : style.home} ${acerca ? style.acerca : style.home}`}>
         {!hideLogo && logoMarkup}
       </div>
     </div>

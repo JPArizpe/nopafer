@@ -10,7 +10,7 @@ export default function Acerca() {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero acerca={true} hideLogo={true} />
 
       <div className='container maxWidth'>
         <div className={style.acerca}>

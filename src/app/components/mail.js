@@ -4,7 +4,7 @@ import Form from './form';
 
 import assets from '../assets/text/content.json';
 import style from '../styles/mail.module.scss';
-import sectionBackground from '../images/sectionBackground.png';
+import sectionBackground from '../assets/images/contacto.png';
 
 export default function Mail({seemore, full}) {
 
