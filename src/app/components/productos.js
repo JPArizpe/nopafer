@@ -1,17 +1,19 @@
 import Title from './title';
-import { Icon } from './icon';
+import dynamic from 'next/dynamic';
 
 import assets from '../assets/text/content.json';
 import style from '../styles/productos.module.scss';
 
 export default function Productos() {
 
+  const IconComponent = dynamic(() => import('./icon'));
+
   const content = assets.productos.content.map((item, index) => <p key={index}>{item}</p>);
   const icons = assets.productos.cards.map((card, index) => {
     const icon = require(`../assets/images/${card.icon}`);
     const hoverIcon = require(`../assets/images/${card.hover}`);
     return (
-      <Icon
+      <IconComponent
         key={index}
         icon={icon}
         hoverIcon={hoverIcon}
