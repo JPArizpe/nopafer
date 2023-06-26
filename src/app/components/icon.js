@@ -3,7 +3,7 @@ import style from '../styles/icon.module.scss';
 import { useState } from 'react';
 import Image from 'next/image'
 
-function Icon({ hoverIcon, icon, text, alt='icon', url=""}) {
+function Icon(props) {
   const [over, setOver] = useState(false);
 
 
@@ -15,12 +15,12 @@ function Icon({ hoverIcon, icon, text, alt='icon', url=""}) {
       >
         <Image
           className={style.icon}
-          src={over ? hoverIcon : icon}
+          src={over ? props.hoverIcon : props.icon}
           width={75}
           height={75}
-          alt={alt}
+          alt={props.alt}
         />
-        <a href={url}>{text}</a>
+        <a href={props.url}>{props.text}</a>
       </div>
     </>
   );
