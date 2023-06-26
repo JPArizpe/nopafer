@@ -19,7 +19,7 @@ function Icon(props) {
           height={75}
           alt={props.alt}
         />
-        <a href={props.url}>{props.text}</a>
+        {/* <a href={props.url}>{props.text}</a> */}
       </div>
     </>
   );
