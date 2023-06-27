@@ -39,7 +39,7 @@ export default function Productos() {
           <table className={style.tg}>
           <thead>
             <tr>
-              <th className={style.tg266k}><strong>VENTAJAS</strong></th>
+              <th className={style.tg266k}><strong>AÑO</strong></th>
               <th className={style.tg0lax}><strong>INSTITUCIÓN</strong></th>
               <th className={style.tg0x09}><strong>INSTITUCIÓN</strong></th>
               <th className={style.tg0lax}><strong>TIEMPO</strong></th>
