@@ -5,12 +5,12 @@
   width: 100%;
   position: relative;
 
-  &.avisos {
-    background-image: url(../assets/images/avisos0.png);
-  }
-
   &.home {
     background-image: url(../images/home_hero.png);
+  }
+
+  &.avisos {
+    background-image: url(../assets/images/avisos0.png);
   }
 
   &.productos {
