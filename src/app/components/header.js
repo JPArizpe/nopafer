@@ -13,7 +13,7 @@ export default function Header() {
           <li><Link href="/acerca" legacyBehavior scroll={true}>Acerca de</Link></li>
           <li><Link href="/productos" legacyBehavior scroll={true}>Productos</Link></li>
           <li><Link href="/avisos" legacyBehavior scroll={true}>Avisos importantes</Link></li>
-          <li><Link href="" legacyBehavior scroll={true}>Cotización de Maquinaria</Link></li>
+          <li><Link href="/cotizacion" legacyBehavior scroll={true}>Cotización de Maquinaria</Link></li>
           <li><Link href="/contacto" legacyBehavior scroll={true}>Contacto</Link></li>
         </ul>
       </div>
