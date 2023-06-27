@@ -23,7 +23,7 @@ export default function Mail({seemore, full}) {
       <div className={`${style.section} ${full && style.full}`} style={{backgroundImage: `url(${sectionBackground.src})`}}>
         <div className={`maxWidth ${style.sectionMargin}`}>
           <div className={style.seeMore}>
-            {seemore && <Readmore text='Ver más'/>}
+            {seemore && <Readmore text='Ver más' url="/avisos"/>}
           </div>
           <Title title={assets.contacto.title} color="white"/>
           <div className={style.form}>
