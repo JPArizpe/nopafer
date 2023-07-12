@@ -2,7 +2,7 @@ import style from '../styles/hero.module.scss';
 
 import Image from 'next/image'
 
-export default function Hero({avisos, hideLogo, productos, acerca, logo}) {
+export default function Hero({avisos, hideLogo, productos, acerca, inicio, logo}) {
 
   const logoMarkup = (
     <div className={style.logoContainer}>
@@ -16,7 +16,7 @@ export default function Hero({avisos, hideLogo, productos, acerca, logo}) {
 
   return (
     <div>
-      <div className={`${avisos ? style.avisos : style.home} ${style.hero} ${productos ? style.productos : style.home} ${acerca ? style.acerca : style.home}`}>
+      <div className={`${avisos ? style.avisos : style.home} ${style.hero} ${productos ? style.productos : style.home} ${acerca ? style.acerca : style.home} ${inicio ? style.inicio : style.home}`}>
         {!hideLogo && logoMarkup}
       </div>
     </div>

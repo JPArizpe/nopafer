@@ -18,7 +18,7 @@ export default function Inicio() {
   return (
     <>
       <Header />
-      <Hero logo={logo}/>
+      <Hero logo={logo} inicio={true}/>
 
       <div className='container maxWidth'>
         <div className={style.inicio}>

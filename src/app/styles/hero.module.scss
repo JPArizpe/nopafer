@@ -27,6 +27,16 @@
     background-image: url(../images/home_hero.png);
   }
 
+  &.inicio {
+    background-image: url(../images/home_hero.png);
+    .logoContainer {
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+    }
+  }
+
   &.avisos {
     background-image: url(../assets/images/avisos0.png);
     .logoContainer {
