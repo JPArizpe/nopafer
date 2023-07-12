@@ -6,11 +6,13 @@ import Footer from '../components/footer';
 
 import style from '../styles/productosPage.module.scss';
 
+import logo from '../assets/images/logo_mini.svg';
+
 export default function Productos() {
   return (
     <>
       <Header />
-      <Hero hideLogo={true} productos={true} />
+      <Hero logo={logo} productos={true} />
 
       <div className='container maxWidth'>
         <div className={style.inicio}>

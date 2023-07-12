@@ -1,9 +1,8 @@
 import style from '../styles/hero.module.scss';
-import logo from '../assets/images/logo.png';
 
 import Image from 'next/image'
 
-export default function Hero({avisos, hideLogo, productos, acerca}) {
+export default function Hero({avisos, hideLogo, productos, acerca, logo}) {
 
   const logoMarkup = (
     <div className={style.logoContainer}>

@@ -6,11 +6,13 @@ import Footer from '../components/footer';
 import style from '../styles/acercaPage.module.scss';
 import Title from '../components/title';
 
+import logo from '../assets/images/logo_mini.svg';
+
 export default function Acerca() {
   return (
     <>
       <Header />
-      <Hero acerca={true} hideLogo={true} />
+      <Hero acerca={true} logo={logo}/>
 
       <div className='container maxWidth'>
         <div className={style.acerca}>

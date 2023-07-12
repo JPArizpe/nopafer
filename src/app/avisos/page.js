@@ -13,11 +13,13 @@ import avisos3 from '../assets/images/avisos3.png';
 import avisos4 from '../assets/images/avisos4.png';
 import avisos5 from '../assets/images/avisos5.png';
 
+import logo from '../assets/images/logo_mini.svg';
+
 export default function AvisosImportantes() {
   return (
     <>
       <Header />
-      <Hero avisos={true} hideLogo={true} />
+      <Hero avisos={true} logo={logo} />
 
       <div className='container maxWidth'>
         <div className={style.inicio}>
