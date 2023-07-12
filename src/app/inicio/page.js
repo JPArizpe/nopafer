@@ -12,7 +12,7 @@ import inicio1 from '../assets/images/inicio1.png';
 import inicio2 from '../assets/images/inicio2.png';
 import inicio3 from '../assets/images/inicio3.png';
 
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/logo_mini.svg';
 
 export default function Inicio() {
   return (
