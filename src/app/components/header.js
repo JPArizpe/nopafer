@@ -8,13 +8,13 @@ export default function Header() {
     <nav className={`${style.nav} ${style.sticky}`}>
       <div className={style.container}>
         <ul className={style.navItem}>
-          <li><Link href="/" legacyBehavior scroll={true}>Home</Link></li>
-          <li><Link href="/inicio" legacyBehavior scroll={true}>Inicio</Link></li>
-          <li><Link href="/acerca" legacyBehavior scroll={true}>Acerca de</Link></li>
-          <li><Link href="/productos" legacyBehavior scroll={true}>Productos</Link></li>
-          <li><Link href="/avisos" legacyBehavior scroll={true}>Avisos importantes</Link></li>
-          <li><Link href="/cotizacion" legacyBehavior scroll={true}>Cotización de Maquinaria</Link></li>
-          <li><Link href="/contacto" legacyBehavior scroll={true}>Contacto</Link></li>
+          <li><Link href={{ pathname: "/", hash: 'head' }} legacyBehavior scroll={true}>Home</Link></li>
+          <li><Link href={{ pathname: "/inicio", hash: 'head' }} legacyBehavior scroll={true}>Inicio</Link></li>
+          <li><Link href={{ pathname: "/acerca", hash: 'head' }} legacyBehavior scroll={true}>Acerca de</Link></li>
+          <li><Link href={{ pathname: "/productos", hash: 'head' }} legacyBehavior scroll={true}>Productos</Link></li>
+          <li><Link href={{ pathname: "/avisos", hash: 'head' }} legacyBehavior scroll={true}>Avisos importantes</Link></li>
+          <li><Link href={{ pathname: "/cotizacion", hash: 'head' }} legacyBehavior scroll={true}>Cotización de Maquinaria</Link></li>
+          <li><Link href={{ pathname: "/contacto", hash: 'head' }} legacyBehavior scroll={true}>Contacto</Link></li>
         </ul>
       </div>
     </nav>
