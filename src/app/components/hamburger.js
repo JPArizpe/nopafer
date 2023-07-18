@@ -8,11 +8,10 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #EFFFFA;
+  background: #569644;
   transform: ${({ open = false }) => open ? 'translateY(0)' : 'translateY(-100%)'};
   height: 100vh;
   text-align: left;
-  padding: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,22 +24,21 @@ const StyledMenu = styled.nav`
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #569644;
+    color: white;
     text-decoration: none;
     transition: color 0.3s linear;
 
-    @media (max-width: 576px) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
+    font-size: 1.5rem;
+    text-align: center;
 
     &:hover {
-      color: #343078;
+      color: white;
     }
   }
 `
 
-const Menu = ({ open = false }) => {
+const Menu = ({ open }) => {
+  
   return (
     <StyledMenu open={open}>
       <Link href={{ pathname: "/", hash: 'head' }} legacyBehavior scroll={true}>Home</Link>
@@ -57,7 +55,7 @@ const Menu = ({ open = false }) => {
 const StyledBurger = styled.button`
   position: absolute;
   top: 5%;
-  left: 2rem;
+  left: 47%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -68,6 +66,11 @@ const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
+  margin-top: 17px;
+  
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 
   &:focus {
     outline: none;
@@ -82,27 +85,27 @@ const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
 
-    :first-child {
+    &.first {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
 
-    :nth-child(2) {
+    &.middle {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     }
 
-    :nth-child(3) {
+    &.last {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
 `
 
-const Burger = ({ open = false, setOpen }) => {
+const Burger = ({ open, setOpen }) => {
   return (
     <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
+      <div className="first"/>
+      <div className="middle"/>
+      <div className="last"/>
     </StyledBurger>
   )
 }

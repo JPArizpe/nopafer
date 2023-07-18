@@ -49,6 +49,7 @@
 
   .contactRight {
     display: flex;
+    width: 100%;
     flex-direction: column;
   } 
 
@@ -70,20 +71,24 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .contactLeft {
-    width: 100%;
-  }
-  .contactRight {
-    width: 100%;
-    margin-bottom: 50px;
+  .section {
+    .contactLeft {
+      width: 100%;
+    }
+    .contactRight {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .contactLeft {
-    width: 50%;
-  }
-  .contactRight {
-    width: 50%;
+  .section {
+    .contactLeft {
+      width: 50%;
+    }
+    .contactRight {
+      width: 50%;
+    }
   }
 }

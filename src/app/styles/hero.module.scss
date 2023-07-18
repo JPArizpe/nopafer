@@ -4,6 +4,7 @@
   background-position: center center;
   width: 100%;
   position: relative;
+  height: 40vh;
 
   .logoContainer {
     position: absolute;
@@ -31,7 +32,7 @@
     background-image: url(../images/home_hero.png);
     .logoContainer {
       .logo {
-        width: 100px;
+        width: 80px;
         height: auto;
       }
     }
@@ -41,7 +42,7 @@
     background-image: url(../assets/images/avisos0.png);
     .logoContainer {
       .logo {
-        width: 100px;
+        width: 80px;
         height: auto;
       }
     }
@@ -51,7 +52,7 @@
     background-image: url(../assets/images/productos_page.png);
     .logoContainer {
       .logo {
-        width: 100px;
+        width: 80px;
         height: auto;
       }
     }
@@ -61,7 +62,7 @@
     background-image: url(../assets/images/acerca_page.png);
     .logoContainer {
       .logo {
-        width: 100px;
+        width: 80px;
         height: auto;
       }
     }

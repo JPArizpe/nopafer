@@ -8,30 +8,31 @@ import sectionBackground from '../images/sectionBackground.png';
 
 import dynamic from 'next/dynamic';
 
+import style from '../styles/landing.module.scss';
 
 export default function Landing() {
 
   const Productos = dynamic(() => import('./productos'), { ssr: false });
 
   return (
-    <>
-      <div className="container maxWidth">
+    <div>
+      <div className={`${style.container} ${style.maxWidth}`}>
         <Inicio />
       </div>
 
-      <div className="container">
+      <div className={`${style.container}`}>
         <Acerca />
       </div>
 
-      <div className="container maxWidth">
+      <div className={`${style.container} ${style.maxWidth}`}>
         {Productos && <Productos />}
       </div>
 
-      <div className="container">
+      <div className={`${style.container}`}>
         <Avisos />
       </div>
 
-      <div className="container">
+      <div className={`${style.container}}`}>
         <Mail
           backgroundImage={sectionBackground.src}
           title="Contacto"
@@ -40,9 +41,9 @@ export default function Landing() {
         />
       </div>
 
-      <div className="container maxWidth">
+      <div className={`${style.container} ${style.maxWidth}`}>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }

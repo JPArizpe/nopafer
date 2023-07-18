@@ -1,6 +1,15 @@
 .nav {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
+  min-height: 75px;
+
+  .mobileNav {
+    display: block;
+  }
+
+  .navItem {
+    display: none;
+  }
 
   &.sticky {
     position: fixed;
@@ -12,18 +21,38 @@
 
 @media only screen and (min-width: 768px) {
   .nav {
+    .mobileNav {
+      display: none;
+    }
+
     div {
       max-width: 80%;
     }
 
     .container {
-      width: 80%;
-      max-width: 80%;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
 
       .navItem {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        list-style-type: none;
+        height: 75px;
+        margin: 0;
+        padding: 0;
+    
+        a {
+          color: white;
+          font-size: 14px;
+          text-decoration: none;
+    
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

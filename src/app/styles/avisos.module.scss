@@ -1,11 +1,23 @@
+.avisosContainer {
+  background-color: $grey-3;
+}
+
 .sectionAvisos {
   padding-top: 1px;
-  background-color: $grey-3;
+  max-width: 80%;
+  margin: 0 auto;
+
   .avisos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionAvisos {
+    max-width: 100%;
   }
 }

@@ -20,7 +20,7 @@ export default function Avisos() {
   });
 
   return (
-    <>
+    <div className={style.avisosContainer}>
       <div className={style.sectionAvisos}>
         <div className="maxWidth">
           <Title title={assets.avisos.title} />
@@ -29,6 +29,6 @@ export default function Avisos() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

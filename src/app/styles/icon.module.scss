@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  width: 50%;
 
   .icon {
     margin-bottom: 5px;
@@ -18,5 +18,11 @@
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .iconLayout {
+    width: 25%;
   }
 }
