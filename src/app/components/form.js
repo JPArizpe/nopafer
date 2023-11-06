@@ -24,9 +24,12 @@ const handleSubmit = (e) => {
 
   emailjs.send(serviceId, templateId, templateParams, publicKey)
     .then((result) => {
-      console.log(result.text);
+      alert('Mensaje enviado correctamente');
+      setNombre('');
+      setEmail('');
+      setMessage('');
     }, (error) => {
-      console.log(error.text);
+      alert('Error al enviar el mensaje')
     });
   }
 
